@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/azzzak/alice"
+	"github.com/schnack/alice"
 	"github.com/stretchr/testify/assert"
 )
 

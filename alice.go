@@ -114,6 +114,7 @@ func webhook(conf Options, stream chan<- Kit) http.HandlerFunc {
 		defer r.Body.Close()
 
 		ctx, cancel := context.WithTimeout(r.Context(), conf.Timeout*time.Millisecond)
+		ctx = context.WithValue(ctx, "URLPATH", r.URL.Path)
 		defer cancel()
 
 		if conf.Debug {

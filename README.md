@@ -9,7 +9,7 @@
 
 ## Установка или обновление
 
-`go get -u github.com/azzzak/alice`
+`go get -u github.com/schnack/alice`
 
 ## Пример
 
@@ -21,7 +21,7 @@ package main
 import (
   "net/http"
 
-  "github.com/azzzak/alice"
+  "github.com/schnack/alice"
 )
 
 func main() {
@@ -70,12 +70,3 @@ resp.Text(fmt.Sprintf("%d %s пива %s на столе", num,
   Sound(sounds.ThingsGlass1)
 ```
 
-## Навыки на базе библиотеки
-
-[![Дневник здоровья](images/health.png)](https://dialogs.yandex.ru/store/skills/dd5bb5ec-dnevnik-zdorov-ya) \
-[**Дневник здоровья**](https://dialogs.yandex.ru/store/skills/dd5bb5ec-dnevnik-zdorov-ya)
-
-[![Полезный Ждун](images/zhdun.jpeg)](https://dialogs.yandex.ru/store/skills/16ff4b52-poleznyj-zhdu) \
-[**Полезный Ждун**](https://dialogs.yandex.ru/store/skills/16ff4b52-poleznyj-zhdu)
-
-Присылайте свои навыки на azzzak@yandex.ru

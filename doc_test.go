@@ -3,7 +3,7 @@ package alice_test
 import (
 	"net/http"
 
-	"github.com/azzzak/alice"
+	"github.com/schnack/alice"
 )
 
 func Example() {

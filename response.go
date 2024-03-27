@@ -6,7 +6,7 @@ import (
 	"math/rand"
 	"strings"
 
-	"github.com/azzzak/alice/effects"
+	"github.com/schnack/alice/effects"
 )
 
 // Response структура исходящего сообщения.
