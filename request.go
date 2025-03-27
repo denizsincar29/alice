@@ -23,6 +23,7 @@ type Request struct {
 		Interfaces struct {
 			AccountLinking *struct{} `json:"account_linking"`
 			Screen         *struct{} `json:"screen"`
+			AudioPlayer    *struct{} `json:"audio_player"`
 		} `json:"interfaces"`
 	} `json:"meta"`
 
@@ -48,6 +49,13 @@ type Request struct {
 		SessionID string `json:"session_id"`
 		SkillID   string `json:"skill_id"`
 		UserID    string `json:"user_id"`
+		User      struct {
+			UserID      string `json:"user_id"`
+			AccessToken string `json:"access_token"`
+		} `json:"user"`
+		Application struct {
+			ApplicationID string `json:"application_id"`
+		} `json:"application"`
 	} `json:"session"`
 
 	State struct {
@@ -62,6 +70,7 @@ func (req *Request) clean() *Request {
 	req.Meta.Interfaces = struct {
 		AccountLinking *struct{} `json:"account_linking"`
 		Screen         *struct{} `json:"screen"`
+		AudioPlayer    *struct{} `json:"audio_player"`
 	}{
 		nil,
 		nil,
@@ -211,7 +220,6 @@ func (req *Request) StateSessionAsJson() (string, error) {
 
 	return string(data), err
 }
-
 
 // AuthToken токен, полученный при связке аккаунтов.
 func (req *Request) AuthToken() string {
