@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/schnack/alice"
+	"github.com/denizsincar29/alice"
 	"github.com/stretchr/testify/assert"
 )
 

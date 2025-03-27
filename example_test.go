@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/schnack/alice"
+	"github.com/denizsincar29/alice"
 )
 
 func ExampleListenForWebhook() {

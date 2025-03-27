@@ -1,4 +1,4 @@
-module github.com/schnack/alice
+module github.com/denizsincar29/alice
 
 go 1.20
 
