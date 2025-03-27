@@ -74,6 +74,7 @@ func (req *Request) clean() *Request {
 	}{
 		nil,
 		nil,
+		nil,
 	}
 	req.LinkingComplete = nil
 	req.Request.Command = ""
